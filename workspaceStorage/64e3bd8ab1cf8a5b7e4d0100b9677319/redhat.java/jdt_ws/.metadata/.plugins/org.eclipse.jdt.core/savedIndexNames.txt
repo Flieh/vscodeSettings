@@ -1,5 +1,0 @@
-INDEX VERSION 1.130+/home/flieh/.config/Code/User/workspaceStorage/64e3bd8ab1cf8a5b7e4d0100b9677319/redhat.java/jdt_ws/.metadata/.plugins/org.eclipse.jdt.core
-3842426239.index
-3054804652.index
-3902130637.index
-2780295741.index
