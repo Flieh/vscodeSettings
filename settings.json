@@ -25,14 +25,15 @@
   "editor.wrappingIndent": "indent",
   "window.menuBarVisibility": "toggle",
   "html.autoClosingTags": false,
-  "editor.fontSize": 17,
+  "editor.fontSize": 15,
   "html.format.wrapLineLength": 0,
   "workbench.panel.location": "right",
-  "editor.fontFamily": "'Cella', 'xErica Type','xHermit','xSource Code Pro','xDroid Sans Mono', 'xmonospace'",
+  "editor.fontFamily": "'xTlwg Typist','xCella', 'xNovaMono','xErica Type','Hermit','Source Code Pro','xDroid Sans Mono', 'xmonospace'",
   "vim.handleKeys": {
     "<C-b>": false,
     "<C-k>": false
   },
   "workbench.colorTheme": "Tinacious Contrast",
-  "keyboard.dispatch": "keyCode"
+  "keyboard.dispatch": "keyCode",
+  "vim.useSystemClipboard": true
 }

@@ -1,0 +1,1438 @@
+!SESSION 2017-11-29 17:18:46.054 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/flieh/.config/Code/User/workspaceStorage/d273cfdcd6ac3c5b28c26abb1db5da6f/redhat.java/jdt_ws
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:18:55.733
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:18:57.235
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:18:57.245
+!MESSAGE Initializing Java Language Server 0.8.0.201711091546
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:18:57.399
+!MESSAGE Installed reference:file:/home/flieh/.vscode/extensions/vscjava.vscode-java-debug-0.3.1/server/com.microsoft.java.debug.plugin-0.3.1.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:18:57.555
+!MESSAGE Creating the default Java project
+
+!ENTRY java-debug 1 0 2017-11-29 17:18:58.036
+!MESSAGE Starting com.microsoft.java.debug
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:18:58.068
+!MESSAGE Started reference:file:/home/flieh/.vscode/extensions/vscjava.vscode-java-debug-0.3.1/server/com.microsoft.java.debug.plugin-0.3.1.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:18:58.611
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:19:04.039
+!MESSAGE Finished creating the default Java project
+
+!ENTRY org.eclipse.osgi 2 0 2017-11-29 17:19:09.119
+!MESSAGE While loading class "org.eclipse.m2e.core.project.IProjectConfigurationManager", thread "Thread[Worker-0,5,main]" timed out waiting (5002ms) for thread "Thread[pool-1-thread-1,5,main]" to finish starting bundle "org.eclipse.m2e.core_1.8.2.20171007-0217 [53]". To avoid deadlock, thread "Thread[Worker-0,5,main]" is proceeding but "org.eclipse.m2e.core.project.IProjectConfigurationManager" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="1.8.2.20171007-0217"; osgi.identity="org.eclipse.m2e.core"; singleton:="true" [id=53] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:103)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:368)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:442)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
+	at java.lang.Class.getConstructor0(Class.java:3075)
+	at java.lang.Class.newInstance(Class.java:412)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importers(ProjectsManager.java:234)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.getImporter(ProjectsManager.java:212)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:98)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.access$1(ProjectsManager.java:94)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager$1.run(ProjectsManager.java:88)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5617)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:82)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:157)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:334)
+	... 35 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:334)
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:103)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:368)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:442)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
+	at java.lang.Class.getConstructor0(Class.java:3075)
+	at java.lang.Class.newInstance(Class.java:412)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importers(ProjectsManager.java:234)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.getImporter(ProjectsManager.java:212)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:98)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.access$1(ProjectsManager.java:94)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager$1.run(ProjectsManager.java:88)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5617)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:82)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:157)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.osgi 2 0 2017-11-29 17:19:14.170
+!MESSAGE While loading class "org.eclipse.m2e.core.MavenPlugin", thread "Thread[Worker-0,5,main]" timed out waiting (5001ms) for thread "Thread[pool-1-thread-1,5,main]" to finish starting bundle "org.eclipse.m2e.core_1.8.2.20171007-0217 [53]". To avoid deadlock, thread "Thread[Worker-0,5,main]" is proceeding but "org.eclipse.m2e.core.MavenPlugin" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="1.8.2.20171007-0217"; osgi.identity="org.eclipse.m2e.core"; singleton:="true" [id=53] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:103)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:368)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:442)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.jdt.ls.core.internal.managers.MavenProjectImporter.<init>(MavenProjectImporter.java:59)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importers(ProjectsManager.java:234)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.getImporter(ProjectsManager.java:212)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:98)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.access$1(ProjectsManager.java:94)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager$1.run(ProjectsManager.java:88)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5617)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:82)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:157)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:334)
+	... 37 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:334)
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:103)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:368)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:442)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.jdt.ls.core.internal.managers.MavenProjectImporter.<init>(MavenProjectImporter.java:59)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importers(ProjectsManager.java:234)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.getImporter(ProjectsManager.java:212)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:98)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.access$1(ProjectsManager.java:94)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager$1.run(ProjectsManager.java:88)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5617)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:82)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:157)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:19:14.272
+!MESSAGE >>New configuration: {java={home=null, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={updateBuildConfiguration=interactive, maven={userSettings=null}}, trace={server=off}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true}, import={exclusions=['**/node_modules', '**/.metadata', '**/archetype-resources']}, contentProvider={preferred=null}, debug={logLevel=warn, settings={showHex=false, showStaticVariables=true, showQualifiedNames=false, maxStringLength=0.0}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:19:14.303
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:19:14.312
+!MESSAGE Importing Gradle project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:19:15.861
+!MESSAGE Workspace initialized in 18569ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:21.598
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:21.704
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:21.714
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:21.740
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:24.330
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:24.341
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:24.601
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:24.602
+!MESSAGE 0 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:24.606
+!MESSAGE Reconciled 0, validated: 1. Took 1968 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:24.612
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:24.648
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:24.650
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:24.728
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:24.729
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:24.801
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:24.802
+!MESSAGE 0 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:24.811
+!MESSAGE Reconciled 0, validated: 1. Took 166 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:25.932
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:25.944
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:25.949
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:26.649
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:26.650
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:26.688
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:26.689
+!MESSAGE 0 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:26.690
+!MESSAGE Reconciled 0, validated: 1. Took 753 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:26.737
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:26.779
+!MESSAGE >> workspace/didChangeWatchedFiles
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:26.791
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:26.798
+!MESSAGE >> workspace/didChangeWatchedFiles
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:21:26.834
+!MESSAGE >> workspace/didChangeWatchedFiles
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:55.029
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:56.699
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:56.724
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:56.744
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:56.984
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:57.141
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:57.142
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:57.351
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:57.352
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:57.362
+!MESSAGE Reconciled 0, validated: 1. Took 575 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:57.402
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:57.437
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:57.438
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:57.472
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:57.518
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:57.525
+!MESSAGE 0 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:57.543
+!MESSAGE Reconciled 0, validated: 1. Took 119 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:57.874
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:58.663
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:58.676
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:58.907
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:58.908
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:58.944
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:59.014
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:59.030
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:59.030
+!MESSAGE 3 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:59.056
+!MESSAGE Reconciled 0, validated: 1. Took 378 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:22:59.309
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.098
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.124
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.390
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.391
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.488
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.492
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.493
+!MESSAGE 3 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.508
+!MESSAGE Reconciled 0, validated: 1. Took 372 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.600
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.654
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.765
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.766
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.966
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.967
+!MESSAGE 3 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:00.998
+!MESSAGE Reconciled 0, validated: 1. Took 393 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:01.007
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:01.018
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:01.178
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:01.744
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:01.746
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:01.800
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:01.801
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:01.859
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:01.871
+!MESSAGE 0 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:01.885
+!MESSAGE Reconciled 0, validated: 1. Took 126 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:03.539
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:04.299
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:04.312
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:04.380
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:04.381
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:04.465
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:04.465
+!MESSAGE 0 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:04.475
+!MESSAGE Reconciled 0, validated: 1. Took 160 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:05.995
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:06.554
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:07.417
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:07.426
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:07.477
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:07.478
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:07.581
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:07.582
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:07.602
+!MESSAGE Reconciled 0, validated: 1. Took 172 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:07.752
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:08.464
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:08.485
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:08.573
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:08.574
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:08.695
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:08.696
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:08.700
+!MESSAGE Reconciled 0, validated: 1. Took 194 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:08.937
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:09.155
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:09.593
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:09.603
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:09.675
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:09.676
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:09.708
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:09.709
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:09.743
+!MESSAGE Reconciled 0, validated: 1. Took 133 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:09.935
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:09.948
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.025
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.026
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.134
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.149
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.181
+!MESSAGE Reconciled 0, validated: 1. Took 208 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.415
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.438
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.451
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.465
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.468
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.547
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.548
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.622
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.622
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.633
+!MESSAGE Reconciled 0, validated: 1. Took 148 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.722
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.724
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.897
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:10.898
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.018
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.031
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.038
+!MESSAGE Reconciled 0, validated: 1. Took 299 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.108
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.139
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.142
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.178
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.189
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.265
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.284
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.301
+!MESSAGE Reconciled 0, validated: 1. Took 155 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.551
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.564
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.573
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.576
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.627
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.628
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.694
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.722
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.728
+!MESSAGE Reconciled 0, validated: 1. Took 149 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.848
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:11.890
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.258
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.260
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.292
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.293
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.343
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.344
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.345
+!MESSAGE Reconciled 0, validated: 1. Took 82 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.432
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.561
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.578
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.734
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.750
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.857
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.858
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.875
+!MESSAGE Reconciled 0, validated: 1. Took 261 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.926
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:12.932
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.004
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.005
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.034
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.034
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.040
+!MESSAGE Reconciled 0, validated: 1. Took 91 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.163
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.177
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.180
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.232
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.232
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.268
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.268
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.288
+!MESSAGE Reconciled 0, validated: 1. Took 102 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.459
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.461
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.578
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.579
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.633
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.633
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:13.640
+!MESSAGE Reconciled 0, validated: 1. Took 172 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.236
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.245
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.252
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.328
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.329
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.409
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.410
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.442
+!MESSAGE Reconciled 0, validated: 1. Took 185 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.504
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.511
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.561
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.562
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.655
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.656
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.672
+!MESSAGE Reconciled 0, validated: 1. Took 147 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.694
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.808
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:14.923
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:15.713
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:15.733
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:15.801
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:15.802
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:15.878
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:15.878
+!MESSAGE 0 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:15.893
+!MESSAGE Reconciled 0, validated: 1. Took 146 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:15.987
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:15.990
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:16.053
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:16.054
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:16.098
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:16.103
+!MESSAGE 1 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:16.109
+!MESSAGE Reconciled 0, validated: 1. Took 113 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:16.417
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:16.463
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:17.676
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:17.678
+!MESSAGE Releasing AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:17.723
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:17.724
+!MESSAGE Caching AST for /hello-world/src/main/java/Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:17.739
+!MESSAGE begin problem for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:17.740
+!MESSAGE 0 problems reported for /Greeter.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:17.743
+!MESSAGE Reconciled 0, validated: 1. Took 54 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:17.959
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:18.035
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:20.515
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:20.527
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:23:20.729
+!MESSAGE >> workspace/didChangeWatchedFiles
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:25:49.308
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:25:49.316
+!MESSAGE Thread[Start Level: Equinox Container: 6ef6cedf-5c98-43ef-a5ce-293a7af49dd9,5,main]
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:336)
+Thread[Framework stop,5,main]
+	at java.lang.Thread.dumpThreads(Native Method)
+	at java.lang.Thread.getAllStackTraces(Thread.java:1610)
+	at org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin.getThreadDump(JavaLanguageServerPlugin.java:266)
+	at org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin.stop(JavaLanguageServerPlugin.java:252)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:947)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:314)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1675)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1594)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:147)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
+	at java.lang.Thread.run(Thread.java:748)
+Thread[Worker-JM,5,main]
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:59)
+Thread[process reaper,10,system]
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Thread[pool-1-thread-1,5,main]
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Thread[Worker-8,5,main]
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:188)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:52)
+Thread[Java indexing,4,main]
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:373)
+	at java.lang.Thread.run(Thread.java:748)
+Thread[Framework Event Dispatcher: org.eclipse.osgi.internal.framework.EquinoxEventPublisher@1a677343,5,main]
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:336)
+Thread[Refresh Thread: Equinox Container: 6ef6cedf-5c98-43ef-a5ce-293a7af49dd9,5,main]
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:336)
+Thread[Active Thread: Equinox Container: 6ef6cedf-5c98-43ef-a5ce-293a7af49dd9,5,main]
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Thread[main,5,main]
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.osgi.container.SystemModule.waitForStop(SystemModule.java:168)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle.waitForStop(EquinoxBundle.java:250)
+	at org.eclipse.osgi.launch.Equinox.waitForStop(Equinox.java:181)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:444)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+Thread[Finalizer,8,system]
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+Thread[Signal Dispatcher,9,system]
+Thread[Worker-2,5,main]
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:188)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:52)
+Thread[Reference Handler,10,system]
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+Thread[process reaper,10,system]
+	at java.lang.UNIXProcess.waitForProcessExit(Native Method)
+	at java.lang.UNIXProcess.lambda$initStreams$3(UNIXProcess.java:289)
+	at java.lang.UNIXProcess$$Lambda$7/1531448569.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Thread[Bundle File Closer,5,main]
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:336)
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-11-29 17:25:50.001
+!MESSAGE The workspace will exit with unsaved changes in this session.
+
+!ENTRY java-debug 1 0 2017-11-29 17:25:50.622
+!MESSAGE Stopping com.microsoft.java.debug
+!SESSION 2017-11-29 17:26:23.705 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/flieh/.config/Code/User/workspaceStorage/d273cfdcd6ac3c5b28c26abb1db5da6f/redhat.java/jdt_ws
+
+!ENTRY com.microsoft.java.debug.plugin 4 0 2017-11-29 17:26:29.517
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in com.microsoft.java.debug.plugin.internal.JavaDebuggerServerPlugin.start() of bundle com.microsoft.java.debug.plugin.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:800)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:933)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1614)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.SystemModule.startWorker(SystemModule.java:264)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.SystemModule.start(SystemModule.java:188)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:383)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:402)
+	at org.eclipse.osgi.launch.Equinox.start(Equinox.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:326)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:239)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.core.internal.runtime.InternalPlatform.getLog(InternalPlatform.java:349)
+	at org.eclipse.core.runtime.Platform.getLog(Platform.java:976)
+	at com.microsoft.java.debug.plugin.internal.JdtLogHandler.publish(JdtLogHandler.java:48)
+	at java.util.logging.Logger.log(Logger.java:738)
+	at java.util.logging.Logger.doLog(Logger.java:765)
+	at java.util.logging.Logger.log(Logger.java:788)
+	at java.util.logging.Logger.info(Logger.java:1490)
+	at com.microsoft.java.debug.plugin.internal.JavaDebuggerServerPlugin.start(JavaDebuggerServerPlugin.java:32)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	... 25 more
+Root exception:
+java.lang.NullPointerException
+	at org.eclipse.core.internal.runtime.InternalPlatform.getLog(InternalPlatform.java:349)
+	at org.eclipse.core.runtime.Platform.getLog(Platform.java:976)
+	at com.microsoft.java.debug.plugin.internal.JdtLogHandler.publish(JdtLogHandler.java:48)
+	at java.util.logging.Logger.log(Logger.java:738)
+	at java.util.logging.Logger.doLog(Logger.java:765)
+	at java.util.logging.Logger.log(Logger.java:788)
+	at java.util.logging.Logger.info(Logger.java:1490)
+	at com.microsoft.java.debug.plugin.internal.JavaDebuggerServerPlugin.start(JavaDebuggerServerPlugin.java:32)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:933)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1614)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.SystemModule.startWorker(SystemModule.java:264)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.SystemModule.start(SystemModule.java:188)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:383)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:402)
+	at org.eclipse.osgi.launch.Equinox.start(Equinox.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:326)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:239)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-11-29 17:26:30.853
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:26:32.614
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:26:34.774
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:26:34.780
+!MESSAGE Initializing Java Language Server 0.8.0.201711091546
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:26:35.793
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2017-11-29 17:26:35.836
+!MESSAGE Thread[Signal Dispatcher,9,system]
+Thread[pool-1-thread-1,5,main]
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Thread[Worker-1,5,main]
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:188)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:52)
+Thread[Connection worker,5,main]
+	at java.lang.String.subSequence(String.java:2003)
+	at java.util.regex.Matcher.getSubSequence(Matcher.java:1294)
+	at java.util.regex.Matcher.group(Matcher.java:541)
+	at org.gradle.util.GradleVersion.<init>(GradleVersion.java:110)
+	at org.gradle.util.GradleVersion.version(GradleVersion.java:97)
+	at org.gradle.tooling.internal.consumer.connection.PluginClasspathInjectionSupportedCheckModelProducer.<clinit>(PluginClasspathInjectionSupportedCheckModelProducer.java:28)
+	at org.gradle.tooling.internal.consumer.connection.CancellableConsumerConnection.createModelProducer(CancellableConsumerConnection.java:53)
+	at org.gradle.tooling.internal.consumer.connection.CancellableConsumerConnection.<init>(CancellableConsumerConnection.java:48)
+	at org.gradle.tooling.internal.consumer.connection.ShutdownAwareConsumerConnection.<init>(ShutdownAwareConsumerConnection.java:30)
+	at org.gradle.tooling.internal.consumer.connection.TestExecutionConsumerConnection.<init>(TestExecutionConsumerConnection.java:33)
+	at org.gradle.tooling.internal.consumer.loader.DefaultToolingImplementationLoader.create(DefaultToolingImplementationLoader.java:88)
+	at org.gradle.tooling.internal.consumer.loader.CachingToolingImplementationLoader.create(CachingToolingImplementationLoader.java:44)
+	at org.gradle.tooling.internal.consumer.loader.SynchronizedToolingImplementationLoader.create(SynchronizedToolingImplementationLoader.java:43)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.onStartAction(LazyConsumerActionExecutor.java:101)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.run(LazyConsumerActionExecutor.java:83)
+	at org.gradle.tooling.internal.consumer.connection.CancellableConsumerActionExecutor.run(CancellableConsumerActionExecutor.java:45)
+	at org.gradle.tooling.internal.consumer.connection.ProgressLoggingConsumerActionExecutor.run(ProgressLoggingConsumerActionExecutor.java:58)
+	at org.gradle.tooling.internal.consumer.connection.RethrowingErrorsConsumerActionExecutor.run(RethrowingErrorsConsumerActionExecutor.java:38)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:55)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Thread[Worker-2,5,main]
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:40)
+	at org.gradle.tooling.internal.consumer.DefaultModelBuilder.get(DefaultModelBuilder.java:50)
+	at org.gradle.tooling.internal.consumer.DefaultProjectConnection.getModel(DefaultProjectConnection.java:41)
+	at org.eclipse.buildship.core.workspace.internal.ConnectionAwareLauncherProxy.newModelBuilder(ConnectionAwareLauncherProxy.java:64)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchModel(DefaultModelProvider.java:68)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.supportsCompositeBuilds(DefaultModelProvider.java:165)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchModels(DefaultModelProvider.java:75)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchEclipseGradleProjects(DefaultModelProvider.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.fetchEclipseProjects(SynchronizeGradleBuildsJob.java:91)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.synchronizeBuild(SynchronizeGradleBuildsJob.java:81)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.runToolingApiJob(SynchronizeGradleBuildsJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob$1.run(ToolingApiJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:62)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob.run(ToolingApiJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Thread[Worker-4,5,main]
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:188)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:52)
+Thread[Worker-3,5,main]
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:188)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:52)
+Thread[Worker-JM,5,main]
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:59)
+Thread[Finalizer,8,system]
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+Thread[Reference Handler,10,system]
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+Thread[Framework stop,5,main]
+	at java.lang.Thread.dumpThreads(Native Method)
+	at java.lang.Thread.getAllStackTraces(Thread.java:1610)
+	at org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin.getThreadDump(JavaLanguageServerPlugin.java:266)
+	at org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin.stop(JavaLanguageServerPlugin.java:252)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:947)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:314)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1675)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1594)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:147)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
+	at java.lang.Thread.run(Thread.java:748)
+Thread[Java indexing,4,main]
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:373)
+	at java.lang.Thread.run(Thread.java:748)
+Thread[Framework Event Dispatcher: org.eclipse.osgi.internal.framework.EquinoxEventPublisher@4e91d63f,5,main]
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:336)
+Thread[process reaper,10,system]
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Thread[main,5,main]
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.osgi.container.SystemModule.waitForStop(SystemModule.java:168)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle.waitForStop(EquinoxBundle.java:250)
+	at org.eclipse.osgi.launch.Equinox.waitForStop(Equinox.java:181)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:444)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+Thread[Timer-0,5,main]
+	at java.lang.Object.wait(Native Method)
+	at java.util.TimerThread.mainLoop(Timer.java:552)
+	at java.util.TimerThread.run(Timer.java:505)
+Thread[Worker-0,5,main]
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:188)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:52)
+Thread[Start Level: Equinox Container: 0736a1d4-099b-4593-9b16-a895416f0c73,5,main]
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:336)
+Thread[Active Thread: Equinox Container: 0736a1d4-099b-4593-9b16-a895416f0c73,5,main]
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+!ENTRY org.eclipse.buildship.core 4 0 2017-11-29 17:26:41.275
+!MESSAGE Synchronize Gradle projects with workspace failed due to an unexpected error.
+!STACK 0
+java.util.concurrent.RejectedExecutionException: Task org.gradle.internal.concurrent.StoppableExecutorImpl$1@7e3fa060 rejected from java.util.concurrent.ThreadPoolExecutor@352d5285[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 1]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl.execute(StoppableExecutorImpl.java:38)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1.run(DefaultAsyncConsumerActionExecutor.java:51)
+	at org.gradle.internal.Factories$1.create(Factories.java:25)
+	at org.gradle.internal.concurrent.ServiceLifecycle.use(ServiceLifecycle.java:69)
+	at org.gradle.internal.concurrent.ServiceLifecycle.use(ServiceLifecycle.java:46)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor.run(DefaultAsyncConsumerActionExecutor.java:49)
+	at org.gradle.tooling.internal.consumer.DefaultModelBuilder.get(DefaultModelBuilder.java:55)
+	at org.gradle.tooling.internal.consumer.DefaultModelBuilder.get(DefaultModelBuilder.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.buildship.core.workspace.internal.ConnectionAwareLauncherProxy.invokeRun(ConnectionAwareLauncherProxy.java:170)
+	at org.eclipse.buildship.core.workspace.internal.ConnectionAwareLauncherProxy.invoke(ConnectionAwareLauncherProxy.java:160)
+	at com.sun.proxy.$Proxy16.get(Unknown Source)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider$2.get(DefaultModelProvider.java:122)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider$3.call(DefaultModelProvider.java:142)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4724)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3522)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2315)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2193)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3932)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4721)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.getFromCache(DefaultModelProvider.java:153)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.executeOperation(DefaultModelProvider.java:138)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.executeModelBuilder(DefaultModelProvider.java:118)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchModel(DefaultModelProvider.java:69)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.supportsCompositeBuilds(DefaultModelProvider.java:165)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchModels(DefaultModelProvider.java:75)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchEclipseGradleProjects(DefaultModelProvider.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.fetchEclipseProjects(SynchronizeGradleBuildsJob.java:91)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.synchronizeBuild(SynchronizeGradleBuildsJob.java:81)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.runToolingApiJob(SynchronizeGradleBuildsJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob$1.run(ToolingApiJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:62)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob.run(ToolingApiJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.resources 4 2 2017-11-29 17:26:44.243
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin.getProjectsManager(JavaLanguageServerPlugin.java:340)
+	at org.eclipse.jdt.ls.core.internal.handlers.WorkspaceDiagnosticsHandler.visit(WorkspaceDiagnosticsHandler.java:84)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.jdt.ls.core.internal.handlers.WorkspaceDiagnosticsHandler.resourceChanged(WorkspaceDiagnosticsHandler.java:62)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-11-29 17:26:44.338
+!MESSAGE An internal error occurred during: "Initialize Workspace".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.ls.core.internal.managers.BasicFileDetector.<init>(BasicFileDetector.java:69)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.applies(GradleProjectImporter.java:60)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.getImporter(ProjectsManager.java:216)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:98)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.access$1(ProjectsManager.java:94)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager$1.run(ProjectsManager.java:88)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5617)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:82)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:157)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-11-29 17:26:45.333
+!MESSAGE The workspace will exit with unsaved changes in this session.
